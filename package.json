@@ -1,0 +1,24 @@
+{
+  "name": "infra-web3-toolkit",
+  "version": "1.0.0",
+  "description": "Infrastructure and Solana Pay integration toolkit for production backend workflows.",
+  "main": "src/backend/app.js",
+  "scripts": {
+    "start": "node src/backend/app.js",
+    "check": "node --check src/backend/app.js && node --check src/web3/solana_pay_service.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@solana/pay": "^1.0.26",
+    "@solana/web3.js": "^1.98.4",
+    "bignumber.js": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0"
+  }
+}
